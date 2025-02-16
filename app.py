@@ -40,12 +40,12 @@ def predict_diabetes(d):
 st.title("Diabetes Prediction")
 
 # Input fields for each parameter
-Pregnancies = st.number_input("Pregnancies", min_value=0, max_value=17, value=0, step=1)
-Glucose = st.number_input("Glucose", min_value=0, max_value=199, value=0, step=1)
-BloodPressure = st.number_input("BloodPressure", min_value=0, max_value=122, value=0, step=1)
-SkinThickness = st.number_input("SkinThickness", min_value=0, max_value=99, value=0, step=1)
+Pregnancies = st.number_input("Pregnancies", min_value=0, max_value=17, value=5, step=1)
+Glucose = st.number_input("Glucose", min_value=0, max_value=199, value=100, step=1)
+BloodPressure = st.number_input("BloodPressure", min_value=0, max_value=122, value70, step=1)
+SkinThickness = st.number_input("SkinThickness", min_value=0, max_value=99, value=2, step=1)
 Insulin = st.number_input("Insulin", min_value=0, max_value=846, value=0, step=1)
-BMI = st.number_input("BMI", min_value=0.0, max_value=67.1, value=0.0, step=0.1)
+BMI = st.number_input("BMI", min_value=0.0, max_value=67.1, value=1.0, step=0.1)
 DiabetesPedigreeFunction = st.number_input("DiabetesPedigreeFunction", min_value=0.078, max_value=2.42, value=0.1, step=0.1)
 Age = st.number_input("Age", min_value=10, max_value=100, value=20, step=1)
 
