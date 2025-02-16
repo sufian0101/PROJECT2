@@ -1,23 +1,4 @@
-import streamlit as st
-import pandas as pd
-import joblib
 
-# Load the pre-trained classifier and scaler using joblib
-classifier = joblib.load('knn_model.joblib')
-scaler = joblib.load('scaler.joblib')
-
-# Define the prediction function
-def predict_survival(d):
-    sample_data = pd.DataFrame([d])
-    scaled_data = scaler.transform(sample_data)
-    pred = classifier.predict(scaled_data)[0]
-    prob = classifier.predict_proba(scaled_data)[0][pred]
-    return pred, prob
-
-# Streamlit UI components
-st.title("Titanic Survival Prediction")
-
-# Input fields for each parameter
 
 import streamlit as st
 import pandas as pd
